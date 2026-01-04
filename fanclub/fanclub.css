@@ -1,0 +1,145 @@
+@charset "utf-8";
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*img*/
+.fanImgHorizon img {
+    width: auto;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.fanImgHorizon {
+    background: rgb(44, 44, 44);
+}
+.fanImgVertical img {
+    max-width: 50vh;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.fanImgVertical {
+    background: rgb(44, 44, 44);
+}
+@media (min-width: 661px){
+    .fanImgHorizon img {display: block;}
+    .fanImgVertical img {display: none;}
+}
+@media (max-width: 660px){
+    .fanImgHorizon img {display: none;}
+    .fanImgVertical img {display: block;}
+}
+
+/*HamburgerBtn*/
+.fanHamburger {
+    width: 36px;
+    height: 21px;
+    right: 24px;
+    top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    cursor: pointer;
+    z-index: 3000;
+}
+.fanHamburger span {
+    display: block;
+    width: 100%;
+    height: 1.4px;
+    transition: all 0.3s;
+    background-color: rgb(231, 231, 231);
+}
+.fanHamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(7.0px, 7.0px); 
+}
+.fanHamburger.open  span:nth-child(2) {
+    opacity: 0;
+}
+.fanHamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7.0px, -7.0px);
+}
+/*fanHbgMenuMenu*/
+.fanHamburgerMenu {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    z-index: 2900;
+    transition: all 1.0s ease;
+}
+.fanHamburgerMenu.active {
+    opacity: 1;
+}
+.normalMenu .headerMenu {
+    background: none;
+    position: static;
+    width: 100%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.fanHamburgerMenu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.fanHamburgerMenu a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+    cursor: pointer;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+}
+.fanHamburgerMenu a:hover {
+    text-decoration: underline;
+}
+
+/*Loding*/
+.loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9000;
+
+    transition: opacity 1.0s ease;
+}
+.loaded {
+    opacity: 0 !important;
+}
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
