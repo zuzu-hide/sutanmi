@@ -118,7 +118,7 @@ p {
         top: 0;
         left: 0;
         width: 50vw;
-        height: 100vh;
+        height: 100svh;
         opacity: 0;
         display: flex;
         flex-direction: column;
@@ -170,7 +170,7 @@ p {
         top: 0;
         right: 0;
         width: 50vw;
-        height: 100vh;
+        height: 100svh;
         opacity: 0;
         display: flex;
         flex-direction: column;
@@ -311,7 +311,7 @@ p {
         top: 0;
         left: 0;
         width: 50vw;
-        height: 100vh;
+        height: 100svh;
         opacity: 0;
         display: flex;
         flex-direction: column;
@@ -363,7 +363,7 @@ p {
         top: 0;
         right: 0;
         width: 50vw;
-        height: 100vh;
+        height: 100svh;
         opacity: 0;
         display: flex;
         flex-direction: column;
@@ -604,7 +604,7 @@ p {
         flex-direction: row;
         align-items: center;
         width: 100vw;
-        height: 100vh;
+        height: 100svh;
     }
     .imgContent .horizon-img {
         order: 2;
