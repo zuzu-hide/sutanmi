@@ -7,49 +7,132 @@
     <link rel="stylesheet" href="fanclub.css">
 </head>
 <body>
-
-
-    <h2>unnko
-        
-    </h2>
-    <div class="fanImgHorizon" id="fanImgHorizon">
-        <img src="../images/sutanmiH1.jpg" alt="photeFanclubH">
-    </div>
-    <div class="fanImgVertical" id="fanImgVertical">
-        <img src="../images/sutanmiV1.jpg" alt="">
-    </div>
-
-    <div class="fanHamburger" id="fanHamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <div class="fanHamburgerMenu" id="fanHamburgerMenu">
-        <div class="headerMenu" id="headerMenu">
-            <ul>
-                <li><a href="">JOIN</a></li>
-                <li><a href="">LOGIN</a></li>
-            </ul>
+    <div class="main-wrapper">
+        <div class="fanImgHorizon" id="fanImgHorizon">
+            <img src="../images/sutanmiH1.jpg" alt="photeFanclubH">
+        </div>
+        <div class="fanImgVertical" id="fanImgVertical">
+            <img src="../images/sutanmiV1.jpg" alt="">
+        </div>
+        <div class="header">
+            <div class="headline">
+                <span class="name">SUGAWARA YUUYA</span>
+                <span class="sub">OFFICIAL FANCLUB</span>
+            </div>
+            
+            <div class="fanHamburger" id="fanHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
-        <div class="normalMenu" id="normalMenu">
-            <ul>
-                <li><a href="main/main.html">TOP</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">NEWS</a></li>
-                <li><a href="">LIVE STREAMING</a></li>
-                <li><a href="">MARSHMALLOW</a></li>
-            </ul>
+        <div class="fanHamburgerMenu" id="fanHamburgerMenu">
+            <div class="headerMenu" id="headerMenu">
+                <div class="hbgHeader">
+                    <span class="name">SUGAWARA YUUYA</span>
+                    <span class="sub">OFFICIAL FANCLUB</span>
+                </div>
+                <ul>
+                    <li><a href="">JOIN</a></li>
+                    <span>/</span>
+                    <li><a href="">LOGIN</a></li>
+                </ul>
+            </div>
+
+            <div class="normalMenu" id="normalMenu">
+                <ul>
+                    <li><a href="../index.html">TOP</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">DIARY</a></li>
+                    <li><a href="">DRAMA</a></li>
+                    <li><a href="https://www.twitch.tv/sutanmi?lang=ja">LIVE STREAMING</a></li>
+                    <li><a href="https://marshmallow-qa.com/sutanmijpn?hl=ja">MARSHMALLOW</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">Q&A</a></li>
+                </ul>
+            </div>
+
+            <div class="hbgfooter">
+                <a href="/information/information.html">OFFICIAL WEBSITE</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="button">
+                <ul>
+                    <li><a href="">JOIN</a></li>
+                    <span>/</span>
+                    <li><a href="">LOGIN</a></li>
+                </ul>
+            </div>
+
+            <div class="sectionNews">
+                <div class="sectionTitle">
+                    <h2>FC  NEWS</h2>
+                </div>
+                <div class="sectionContents">
+                    <ol>
+                        <li class="fade-in"><a href="">
+                            <span class="year">2026</span>
+                            <span class="day">01 / 08</span>
+                            <span class="content">MARSHMALLOW</span>
+                        </a></li>
+                        <li class="fade-in"><a href="https://x.com/sutanmiJPN/status/2006238976437620745">
+                            <span class="year">2025</span>
+                            <span class="day">12 / 31</span>
+                            <span class="content">冬コミ報告</span>                        
+                        </a></li>
+                        <li class="fade-in"><a href="https://x.com/sutanmiJPN/status/2005911053310280074">
+                            <span class="year">2025</span>
+                            <span class="day">12 / 29</span>
+                            <span class="content">冬コミについて</span>
+                        </a></li>
+                    </ol>
+                </div>
+                <div class="moreContents fade-in">
+                    <a href="">MORE</a>
+                </div>
+            </div>
+
+            <div class="mainfooter fade-in">
+                <div class="boderOutside">
+                    <div class="boderInside">
+                        <a href="">
+                            <span class="name">SUGAWARA YUUYA</span>
+                            <span class="sub">OFFICIAL FANCLUB</span>
+                            <span class="mainfooter-content">加入はこちらから</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
       
+    <footer class="footer">   
+        <div class="footer-contents">
+            <a class="footer-title">
+                <span class="name">SUGAWARA YUUYA</span>
+                <span class="sub">OFFICIAL FANCLUB</span>
+            </a>
+            <ol class="footer-nav">
+                <li><a href="">当サイトについて</a></li>
+                <li><a href="">利用規約について</a></li>
+                <li><a href="">お支払いについて</a></li>
+                <li><a href="">推奨環境</a></li>
+                <li><a href="">個人保護方針</a></li>
+                <li><a href="">特定商取引に基づく表示</a></li>
+                <li><a href="">よくあるご質問</a></li>
+            </ol>
+        </div>
+    </footer>
+
     <div class="loading-screen" id="loading-screen">
         <div class="spinner"></div>
         <p>Loading...</p>
     </div>
     <div class="hidden" id="content"></div>
-
     <script src="fanclub.js"></script>
 </body>
 </html>

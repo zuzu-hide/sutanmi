@@ -24,7 +24,7 @@ fanHbgBtn.addEventListener("click", function() {
     fanHbgMenu.classList.toggle("active");
 });
 
-document.querySelectorAll('.fanHamburgerMenu a').forEach(link => {
+document.querySelectorAll('.normalMenu a').forEach(link => {
     link.addEventListener('mouseover', function() {
         this.style.transition = 'transform 1.2s ease-in-out';
         this.style.transform = 'rotateY(360deg)';
@@ -34,4 +34,35 @@ document.querySelectorAll('.fanHamburgerMenu a').forEach(link => {
         this.style.transition = 'none';
         this.style.transform = 'rotateY(0deg)';
     });
+})
+
+//scroll
+const hamburger = document.querySelector('.fanHamburger');
+const headLine = document.querySelector('.headline');
+const triggerHeight = window.innerHeight;
+
+window.addEventListener(`scroll`, () => {
+    if (window.scrollY > triggerHeight) {
+        document.body.classList.add(`is-scrolled`);
+    } else {
+        document.body.classList.remove(`is-scrolled`);
+    }
+});
+
+window.addEventListener('scroll', () => {
+    const fadeIns = document.querySelectorAll(".fade-in");
+ 
+    fadeIns.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight - 100 && rect.bottom > 100) {
+            element.classList.add(`active`);
+        }
+    }) 
+});
+
+window.addEventListener('load', () => {
+    const event = new Event('scroll');
+    window.dispatchEvent(event);
 })
